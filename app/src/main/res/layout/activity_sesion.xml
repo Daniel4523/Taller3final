@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:layout_editor_absoluteX="21dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ImageButton
+        android:id="@+id/googleboton7"
+        android:layout_width="286dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:scaleType="fitStart"
+        android:src="@drawable/png_clipart_google_logo_google_search_google_now_google_text_trademark_thumbnail"
+        app:layout_constraintBottom_toTopOf="@+id/botonregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/botonrecupera"
+        tools:src="@drawable/png_clipart_google_logo_google_search_google_now_google_text_trademark_thumbnail" />
+
+    <ImageView
+        android:id="@+id/imagenicono"
+        android:layout_width="153dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textodescriptivo"
+        app:layout_constraintEnd_toStartOf="@+id/Nombreapp"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/Nombreapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textodescriptivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenicono"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textodescriptivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/texto_segundario"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imagenes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenicono" />
+
+    <ImageView
+        android:id="@+id/imagenes2"
+        android:layout_width="81dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/googleboton7"
+        app:layout_constraintEnd_toStartOf="@+id/editTextUsuario"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodescriptivo"
+        app:srcCompat="@drawable/_3__1_" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="225dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_rounded"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenes2"
+        app:layout_constraintTop_toBottomOf="@+id/textodescriptivo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/edit_text_rounded"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/botoningresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imagenes2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsuario"
+        tools:text="contraseña" />
+
+    <Button
+        android:id="@+id/botoningresar"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="@string/ingresar"
+        app:layout_constraintBottom_toTopOf="@+id/botonrecupera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
+
+    <Button
+        android:id="@+id/botonregistro"
+        android:layout_width="96dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="11dp"
+
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="98dp"
+        android:background="@android:color/transparent"
+        android:text="registrate"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textoderegistro"
+        app:layout_constraintTop_toBottomOf="@+id/googleboton7" />
+
+    <Button
+        android:id="@+id/botonrecupera"
+        android:layout_width="192dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginEnd="82dp"
+        android:background="@android:color/transparent"
+        android:text="@string/recuperar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/googleboton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botoningresar" />
+
+    <TextView
+        android:id="@+id/textoderegistro"
+        android:layout_width="131dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="93dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="¿no tienes cuenta?,"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonregistro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleboton7"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:allowUndo="false"
+        android:text="ingresar con Google"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/googleboton7"
+        app:layout_constraintEnd_toStartOf="@id/botoningresar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/botonrecupera"
+        app:layout_constraintTop_toTopOf="@+id/googleboton7"
+        app:layout_constraintVertical_bias="0.419"
+        tools:text="Ingresar con google" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/textoboton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="textView4"
+        app:layout_constraintBottom_toTopOf="@+id/googleboton7"
+        app:layout_constraintEnd_toStartOf="@+id/googleboton7"
+        app:layout_constraintStart_toEndOf="@+id/googleboton7"
+        app:layout_constraintTop_toBottomOf="@+id/googleboton7" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

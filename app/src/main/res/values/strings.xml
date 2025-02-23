@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DIÑI</string>
+    <string name="minombre">Daniel Mendez</string>
+    <string name="registrate">Registrate</string>
+    <string name="texto_introductorio">inicia una nueva aventura con diñi y descubre una nueva forma dever el mundo</string>
+    <string name="comenzar">Comienza</string>
+    <string name="texto_segundario">la aventura esta por iniciar, por favor inicia sesion</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="recuperar">Recuperar contraseña</string>
+    <string name="nocuenta">no tienes cuenta, registrate</string>
+    <string name="Google">ingresa sesion con google</string>
+</resources>
