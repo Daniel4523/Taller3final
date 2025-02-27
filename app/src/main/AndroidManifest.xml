@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SesionActivity" android:exported="true"/>
-
+        <activity android:name=".registroActivity" android:exported="true"/>
+        <activity android:name=".recuperacionActivity" android:exported="true"/>
+        <activity android:name=".perfilActivity" android:exported="true"/>
         <activity
             android:name=".loginActivity"
             android:exported="true"/>
